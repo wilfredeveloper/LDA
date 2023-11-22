@@ -44,13 +44,8 @@ int main(int argc, char *argv[]) {
     std::vector<std::pair<int, int>> result;
     drawDDALine(x1, y1, x2, y2, result);
 
-    // Print the resulting coordinates
-    for (const auto &coord : result) {
-        std::cout << "(" << coord.first << ", " << coord.second << ")\n";
-    }
-
     // Output the coords to an external file in format readable by matplotlib
-    std::ofstream outputFile("coordinates.txt");
+    std::ofstream outputFile("output/DDA_coordinates.txt");
     for (const auto &coord : result) {
         outputFile << coord.first << " " << coord.second << "\n";
     }

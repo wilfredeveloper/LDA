@@ -43,7 +43,7 @@ int main(int argc, char *argv[]) {
     drawBresenhamLine(x1, y1, x2, y2, result);
 
     // Output the coordinates to a file
-    std::ofstream outputFile("bresenham_coordinates.txt");
+    std::ofstream outputFile("output/bresenham_coordinates.txt");
     for (const auto &coord : result) {
         outputFile << coord.first << " " << coord.second << "\n";
     }
