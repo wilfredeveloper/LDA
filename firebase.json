@@ -1,6 +1,6 @@
 {
     "functions": [{
-        "source": "",
+        "source": "src",
         "codebase": "default",
         "ignore": [
             "node_modules",
