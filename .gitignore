@@ -1,2 +1,5 @@
-DDA.exe
-coordinates.txt
+#ignore all executables
+*.exe
+
+# Ignore all text files
+*.txt
