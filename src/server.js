@@ -73,6 +73,10 @@ function drawBresenhamLine(x1, y1, x2, y2, resultBuffer) {
     }
 }
 
+app.get('/', (req, res) => {
+    res.send("Welcome to Algo-draw express")
+})
+
 
 app.post('/DDA', (req, res) => {
     const { x1, y1, x2, y2 } = req.body;
@@ -131,4 +135,4 @@ app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
 
-export default app;
+exports.api = functions.https.onRequest(app)

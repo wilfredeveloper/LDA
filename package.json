@@ -2,7 +2,7 @@
     "name": "lda",
     "version": "1.0.0",
     "description": "DDA and Bresenham Line drawing algrithms implementation in CPP",
-    "main": "server.js",
+    "main": "src/server.js",
     "engines": {
         "node": "20"
     },
@@ -11,7 +11,7 @@
         "serve": "firebase emulators:start --only functions",
         "shell": "firebase functions:shell",
         "start": "npm run shell",
-        "deploy": "firebase deploy --only functions",
+        "deploy": "firebase deploy --only function:api",
         "logs": "firebase functions:log"
     },
     "keywords": [],
