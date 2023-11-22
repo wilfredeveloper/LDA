@@ -1,18 +1,21 @@
 {
-  "name": "lda",
-  "version": "1.0.0",
-  "description": "DDA and Bresenham Line drawing algrithms implementation in CPP",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.20.2",
-    "express": "^4.18.2",
-    "ffi-napi": "^4.0.3",
-    "vercel": "^32.5.6"
-  }
+    "name": "lda",
+    "version": "1.0.0",
+    "description": "DDA and Bresenham Line drawing algrithms implementation in CPP",
+    "main": "index.js",
+    "engines": {
+        "node": "14.x"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "express": "^4.18.2",
+        "ffi-napi": "^4.0.3",
+        "vercel": "^32.5.6"
+    }
 }
