@@ -1,0 +1,12 @@
+{
+  "name": "lda",
+  "version": "1.0.0",
+  "description": "DDA and Bresenham Line drawing algrithms implementation in CPP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
