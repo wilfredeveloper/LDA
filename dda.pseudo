@@ -1,0 +1,19 @@
+function drawLineDDA(x1, y1, x2, y2)
+    dx = x2 - x1
+    dy = y2 - y1
+    steps = max(|dx|, |dy|) // Determine the number of steps
+
+    xIncrement = dx / steps
+    yIncrement = dy / steps
+
+    x = x1
+    y = y1
+
+    plot(round(x), round(y)) // Plot the initial point
+
+    for i from 1 to steps
+        x = x + xIncrement
+        y = y + yIncrement
+        plot(round(x), round(y))
+    end for
+end function

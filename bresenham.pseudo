@@ -1,0 +1,23 @@
+function drawLineBresenham(x1, y1, x2, y2)
+    dx = x2 - x1
+    dy = y2 - y1
+    slope = dy / dx
+    x = x1
+    y = y1
+    P = 2 * dy - dx
+
+    plot(x, y) // Plot the initial point
+
+    for i from 1 to dx
+        if P < 0
+            x = x + 1
+            y = y
+            P = P + 2 * dy
+        else
+            x = x + 1
+            y = y + 1
+            P = P + 2 * dy - 2 * dx
+        end if
+        plot(x, y)
+    end for
+end function
